@@ -20,7 +20,7 @@ Both should be installed and make sure mongodb is running.
 
 ```shell
 
-git  clone  https://github.com/Creolestudios/e-commerce_mern.git
+git  clone  https://github.com/Creolestudios/chatapp_mern.git
 
 cd  chatapp_mern
 
