@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-//Message schema 
+// @desc    Message schema
+// @access  Private
 const MessageSchema = mongoose.Schema(
   {
     message: {

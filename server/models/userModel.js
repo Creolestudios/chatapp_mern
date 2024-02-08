@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
-// User schema 
+// @desc    User schema
+// @access  Private
 const userSchema = new mongoose.Schema({
   username: {
     type: String,

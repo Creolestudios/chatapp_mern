@@ -15,6 +15,8 @@ export default function Chat() {
   const [currentChat, setCurrentChat] = useState(undefined);
   const [currentUser, setCurrentUser] = useState(undefined);
   useEffect(() => {
+    // NOTE: set the logged in user
+    // resolution of a Promise
     const setUser = async () => {
       if (!localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)) {
         navigate('/login');
@@ -37,6 +39,8 @@ export default function Chat() {
   }, [currentUser]);
 
   useEffect(() => {
+    // NOTE: set the current contact to chat
+    // resolution of a Promise
     const setCurrentContact = async () => {
       if (currentUser) {
         if (currentUser.isAvatarImageSet) {
