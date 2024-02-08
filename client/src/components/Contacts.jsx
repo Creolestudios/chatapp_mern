@@ -13,6 +13,8 @@ export default function Contacts({ contacts, changeChat }) {
     setCurrentUserName(data.username);
     setCurrentUserImage(data.avatarImage);
   }, []);
+
+  //Switch chat to different user
   const changeCurrentChat = (index, contact) => {
     setCurrentSelected(index);
     changeChat(contact);

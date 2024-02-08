@@ -12,6 +12,7 @@ export default function ChatContainer({ currentChat, socket }) {
   const [arrivalMessage, setArrivalMessage] = useState(null);
 
   useEffect(() => {
+    // send message to user
     const postMessage = async () => {
       const data = await JSON.parse(
         localStorage.getItem(process.env.REACT_APP_LOCALHOST_KEY)
@@ -26,6 +27,7 @@ export default function ChatContainer({ currentChat, socket }) {
   }, [currentChat]);
 
   useEffect(() => {
+    // get current chat of selected user
     const getCurrentChat = async () => {
       if (currentChat) {
         await JSON.parse(

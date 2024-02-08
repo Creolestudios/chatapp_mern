@@ -33,6 +33,7 @@ export default function Register() {
     setValues({ ...values, [event.target.name]: event.target.value });
   };
 
+  //Register Form validation
   const handleValidation = () => {
     const { password, confirmPassword, username, email } = values;
     if (password !== confirmPassword) {
@@ -61,6 +62,7 @@ export default function Register() {
     return true;
   };
 
+  //Create new account 
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (handleValidation()) {

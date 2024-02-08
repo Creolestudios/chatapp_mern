@@ -27,6 +27,7 @@ export default function Login() {
     setValues({ ...values, [event.target.name]: event.target.value });
   };
 
+  //Sign in form validation
   const validateForm = () => {
     const { username, password } = values;
     if (username === '' || password === '') {
@@ -36,6 +37,7 @@ export default function Login() {
     return true;
   };
 
+  //Sign in with existing account
   const handleSubmit = async (event) => {
     event.preventDefault();
     if (validateForm()) {

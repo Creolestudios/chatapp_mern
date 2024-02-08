@@ -1,6 +1,7 @@
 
 # Chat Application
- 
+
+[Take tour of Chat Application](https://www.loom.com/share/4946fb24a6604234800641eae0a3ab4b)
 
 ## Installation Guide
 

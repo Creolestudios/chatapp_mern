@@ -11,12 +11,14 @@ export default function ChatInput({ handleSendMsg }) {
     setShowEmojiPicker(!showEmojiPicker);
   };
 
+  //picking up emoji
   const handleEmojiClick = (event, emojiObject) => {
     let message = msg;
     message += emojiObject.emoji;
     setMsg(message);
   };
 
+  //send message from chat input
   const sendChat = (event) => {
     event.preventDefault();
     if (msg.length > 0) {

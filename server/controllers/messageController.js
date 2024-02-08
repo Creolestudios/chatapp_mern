@@ -1,5 +1,6 @@
 const Messages = require("../models/messageModel");
 
+// To get all messages of selected user
 module.exports.getMessages = async (req, res, next) => {
   try {
     const { from, to } = req.body;
@@ -22,6 +23,7 @@ module.exports.getMessages = async (req, res, next) => {
   }
 };
 
+//send message to selected user
 module.exports.addMessage = async (req, res, next) => {
   try {
     const { from, to, message } = req.body;

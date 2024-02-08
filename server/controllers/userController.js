@@ -1,6 +1,7 @@
 const User = require("../models/userModel");
 const bcrypt = require("bcrypt");
 
+// login with username and password with existing account
 module.exports.login = async (req, res, next) => {
   try {
     const { username, password } = req.body;
@@ -17,6 +18,7 @@ module.exports.login = async (req, res, next) => {
   }
 };
 
+// Register new user service
 module.exports.register = async (req, res, next) => {
   try {
     const { username, email, password } = req.body;
@@ -39,6 +41,7 @@ module.exports.register = async (req, res, next) => {
   }
 };
 
+// get all users list to begin chat
 module.exports.getAllUsers = async (req, res, next) => {
   try {
     const users = await User.find({ _id: { $ne: req.params.id } }).select([
@@ -53,6 +56,7 @@ module.exports.getAllUsers = async (req, res, next) => {
   }
 };
 
+//set avatar for user
 module.exports.setAvatar = async (req, res, next) => {
   try {
     const userId = req.params.id;
@@ -74,6 +78,7 @@ module.exports.setAvatar = async (req, res, next) => {
   }
 };
 
+// log out from chat app
 module.exports.logOut = (req, res, next) => {
   try {
     if (!req.params.id) return res.json({ msg: "User id is required " });
