@@ -1,5 +1,9 @@
 # Chat Application
 
+Introducing new instantaneous and fluid conversations with friends, family, or colleagues. Our MERN(MongoDB, Express.js, React, Node.js)-based chat app ensures that messages are delivered and received in real-time, creating a dynamic and responsive communication environment.
+ 
+Experience the user-friendly interface crafted with a focus on simplicity. Navigate effortlessly through chat rooms, private messages, and group discussions, making communication a breeze.
+
 [Take tour of Chat Application](https://www.loom.com/share/4946fb24a6604234800641eae0a3ab4b)
 
 <!-- toc -->
